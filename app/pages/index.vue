@@ -2,12 +2,13 @@
 definePageMeta({
   layout: 'home',
 })
-
-const online = useOnline()
 </script>
 
 <template>
   <div>
-    <Logos mb-6 />
+    <UButton>
+      Click me
+    </UButton>
+    <Logos class="h-10 w-10" />
   </div>
 </template>
