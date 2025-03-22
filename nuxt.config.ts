@@ -9,12 +9,12 @@ export default defineNuxtConfig({
     '@nuxtjs/color-mode',
     '@vite-pwa/nuxt',
     '@nuxt/eslint',
+    '@nuxt/test-utils/module',
   ],
 
   devtools: {
     enabled: true,
   },
-
   app: {
     head: {
       viewport: 'width=device-width,initial-scale=1',
@@ -74,4 +74,5 @@ export default defineNuxtConfig({
   },
 
   pwa,
+  vueuse: { ssrHandlers: true },
 })
